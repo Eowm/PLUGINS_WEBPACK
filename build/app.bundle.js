@@ -104,7 +104,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"._1yWMblMhcoxIcFRQVWQUoB {\\r\\n}\", \"\"]);\n\n// exports\nexports.locals = {\n\t\"TodoApp\": \"_1yWMblMhcoxIcFRQVWQUoB\"\n};\n\n//# sourceURL=webpack:///./src/containers/App.css?./node_modules/css-loader??ref--5-1");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"._1yWMblMhcoxIcFRQVWQUoB {\\r\\n    background-color: #F5F5F5;\\r\\n    color: #222;\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    flex-wrap: nowrap;\\r\\n    justify-content: center;\\r\\n    align-items: center;\\r\\n    align-content: center;\\r\\n    width: 100vw;\\r\\n    height: 100vh;\\r\\n}\", \"\"]);\n\n// exports\nexports.locals = {\n\t\"TodoApp\": \"_1yWMblMhcoxIcFRQVWQUoB\"\n};\n\n//# sourceURL=webpack:///./src/containers/App.css?./node_modules/css-loader??ref--5-1");
 
 /***/ }),
 

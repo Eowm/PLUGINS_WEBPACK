@@ -2,9 +2,11 @@ import React from 'react';
 import style from './TodoList.css';
 
 const List = props => {
-	const todoListElments = props.list.map(element => <li key={element.id} id={element.id} onClick={() => props.remove(element.id)}>{element.text}</li>)
+	const todoListElments = props.list.map(element => <Todo id={element.id} remove={props.remove} text={element.text}>)
 		return (
+		<div className={style.TodoList}>
 			<ul>{todoListElments}</ul>
+		</div>
 		)
 }
 
