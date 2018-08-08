@@ -32,8 +32,12 @@ class App extends React.Component {
 			text: val,
 			id: uuid.v4(),
 		};
-		const data =[...this.state.data, todo];
+		if (val !== '') {
+		const data =[todo, ...this.state.data];
 		this.setState({data: data});
+		} else{
+		const data=data;
+		}	
 	}
 	removeTodo(id){
 		const reminder =this.state.data.filter(todo => todo.id !== id);
@@ -49,7 +53,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className={style.TodoApp}>
-				<Title title='Lista ToDo' length={this.state.data.lenght} />
+				<Title title='Lista ToDo' length={this.state.data.length} />
 				<TodoForm add={this.addTodo} updateValue={this.updateValue} value={this.state.value} />
 				<TodoList list={this.state.data} remove={this.removeTodo.bind(this)} />
         	</div>
