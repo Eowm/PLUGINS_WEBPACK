@@ -27,17 +27,16 @@ class App extends React.Component {
         this.removeTodo = this.removeTodo.bind(this);
         this.updateValue = this.updateValue.bind(this);
 	}
-	addTodo(val){
+	addTodo(val, event){
+		event.preventDefault();
 		const todo = {
 			text: val,
 			id: uuid.v4(),
 		};
-		if (val !== '') {
+		if (!val) {
 		const data =[todo, ...this.state.data];
 		this.setState({data: data});
-		} else{
-		const data=data;
-		}	
+		};
 	}
 	removeTodo(id){
 		const reminder =this.state.data.filter(todo => todo.id !== id);
