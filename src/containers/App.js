@@ -28,7 +28,6 @@ class App extends React.Component {
         this.updateValue = this.updateValue.bind(this);
 	}
 	addTodo(val, ev){
-		ev.preventDefault();
 		const todo = {
 			text: val,
 			id: uuid.v4(),
