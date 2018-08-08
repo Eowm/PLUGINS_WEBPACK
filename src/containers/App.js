@@ -27,8 +27,8 @@ class App extends React.Component {
         this.removeTodo = this.removeTodo.bind(this);
         this.updateValue = this.updateValue.bind(this);
 	}
-	addTodo(val, event){
-		event.preventDefault();
+	addTodo(val, ev){
+		ev.preventDefault();
 		const todo = {
 			text: val,
 			id: uuid.v4(),
