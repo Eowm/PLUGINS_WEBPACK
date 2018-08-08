@@ -2,7 +2,7 @@ import React from 'react';
 import uuid from 'uuid';
 import style from './App.css';
 import Title from '../components/Title';
-import List from '../components/TodoList';
+import TodoList from '../components/TodoList';
 import TodoForm from '../components/TodoForm';
 import { hot } from 'react-hot-loader';
 
@@ -50,8 +50,8 @@ class App extends React.Component {
 		return (
 			<div className={style.TodoApp}>
 				<Title title='Lista ToDo' length={this.state.data.lenght} />
-				<TodoForm add={this.addTodo} updateValue={this.updateValue} value={this.state.value}></TodoForm>
-				<List list={this.state.data} remove={this.removeTodo.bind(this)} />
+				<TodoForm add={this.addTodo} updateValue={this.updateValue} value={this.state.value} />
+				<TodoList list={this.state.data} remove={this.removeTodo.bind(this)} />
         	</div>
 			);
 	}
